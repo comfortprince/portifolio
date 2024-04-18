@@ -6,7 +6,7 @@ export default function SideBar({className, closeSideBar}) {
 	return (
 		<section 
 			className={`
-				md:hidden fixed top-0 left-0 w-full h-full
+				md:hidden fixed top-0 left-0 w-full h-full z-20
 				${className}
 			`}
 		>
@@ -17,7 +17,7 @@ export default function SideBar({className, closeSideBar}) {
 			></div>
 
 			{/*Sidebar*/}
-			<div className="bg-dark-blue shadow-lg relative h-full w-2/3 px-4 py-6 z-10">
+			<div className="bg-dark-blue shadow-lg relative h-full w-2/3 px-4 py-6 z-30">
 				<CloseBtn 
 					className="mb-6" 
 					handleClick={closeSideBar}
