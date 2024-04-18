@@ -9,3 +9,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@layer base{
+  body{
+    @apply bg-dark-blue;
+  }
+}
