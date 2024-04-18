@@ -1,6 +1,8 @@
 import { professionalPhoto } from '../../data/Constants'
+import techImWorkingOn from '../../data/current-technologies'
 
 import H1 from '../../components/H1'
+import RightArrow from '../../components/RightArrow'
 
 export default function About({className}) {
 	return (
@@ -25,13 +27,28 @@ export default function About({className}) {
 					<p className="mt-3">
 						Here are a few technologies I've been working with recently:
 					</p>
-					<ul className="mt-3">
-						<li></li>
-					</ul>
+					<div className="flex gap-12 md:gap-32 mt-3">
+						<ul>
+							{techImWorkingOn.slice(0, 3).map((technology) => (
+								<li className="flex items-center">
+									<RightArrow/>
+									{technology}
+								</li>
+							))}
+						</ul>
+						<ul>
+							{techImWorkingOn.slice(3).map((technology) => (
+								<li className="flex items-center">
+									<RightArrow/>
+									{technology}
+								</li>
+							))}
+						</ul>
+					</div>
 				</div>
 				<div className="md:w-1/2 max-md:mb-8 max-md:flex justify-center">
 					<div className="w-80 h-96 md:w-60 md:h-72 relative md:ml-16">
-						<img className="w-full h-full object-cover rounded-lg absolute z-10" src={professionalPhoto}/>
+						<img alt="Comfort Hluyo" className="w-full h-full object-cover rounded-lg absolute z-10" src={professionalPhoto}/>
 						<div className="border-2 border-light-blue w-full h-full absolute top-4 left-4 rounded-lg"></div>
 					</div>
 				</div>
