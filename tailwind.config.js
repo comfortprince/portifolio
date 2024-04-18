@@ -1,8 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-const plugin = require('tailwindcss/plugin')
-
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -13,7 +11,4 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    plugin(( { addVariant } ) => { addVariant('active', '&[data-status="active"]') })
-  ],
 }
