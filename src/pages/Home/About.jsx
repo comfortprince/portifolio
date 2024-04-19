@@ -2,7 +2,7 @@ import { professionalPhoto } from '../../data/Constants'
 import techImWorkingOn from '../../data/current-technologies'
 
 import H1 from '../../components/H1'
-import RightArrow from '../../components/RightArrow'
+import UnorderedList from '../../components/UnorderedList'
 
 export default function About({className}) {
 	return (
@@ -28,22 +28,8 @@ export default function About({className}) {
 						Here are a few technologies I've been working with recently:
 					</p>
 					<div className="flex gap-12 md:gap-32 mt-3">
-						<ul>
-							{techImWorkingOn.slice(0, 3).map((technology) => (
-								<li key={technology} className="flex items-center">
-									<RightArrow/>
-									{technology}
-								</li>
-							))}
-						</ul>
-						<ul>
-							{techImWorkingOn.slice(3).map((technology) => (
-								<li key={technology} className="flex items-center">
-									<RightArrow/>
-									{technology}
-								</li>
-							))}
-						</ul>
+						<UnorderedList items={techImWorkingOn.slice(0, 3)}/>
+						<UnorderedList items={techImWorkingOn.slice(3)}/>
 					</div>
 				</div>
 				<div className="md:w-1/2 max-md:mb-8 max-md:flex justify-center">

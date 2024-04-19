@@ -1,7 +1,7 @@
 import experiences from '../../data/experiences'
 
 import H1 from '../../components/H1'
-import RightArrow from '../../components/RightArrow'
+import UnorderedList from '../../components/UnorderedList'
 
 export default function Experience({className}) {
 	return (
@@ -42,14 +42,7 @@ function ExperienceCard ({experience}) {
 			<div className="text-lg mb-3 font-medium">
 				{experience.company}
 			</div>
-			<ul className="grid gap-1">
-				{experience.duties.map(duty => (
-					<li key={duty} className="flex items-center">
-						<RightArrow/>
-						{duty}
-					</li>
-				))}
-			</ul>
+			<UnorderedList items={experience.duties}/>
 		</article>
 	)
 }
