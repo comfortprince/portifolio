@@ -31,7 +31,7 @@ export default function Home() {
 					{navLinks.map((link, ndx) => (
 						<a 
 							key={ndx} 
-							href={link.href}
+							href={link.url}
 							className='text-light-gray text-sm'
 						>
 							<span className="text-light-blue px-1">
@@ -51,13 +51,14 @@ export default function Home() {
 				<SideBar 
 					className={`${isSideBarOpen ? '' : 'hidden'}`}
 					closeSideBar={() => {setIsSideBarOpen(false)}}
+					navLinks={navLinks}
 				/>
 			</header>
 			<main className="relative text-light-gray">
-				<About className="px-8 md:px-20 lg:px-44" />
-				<Projects className="px-8 md:px-20 lg:px-44" />
-				<Experience className="px-8 md:px-20 lg:px-44" />
-				<Contact className="px-8 md:px-20 lg:px-44" />
+				<About id="about" className="px-8 md:px-20 lg:px-44" />
+				<Projects id="projects" className="px-8 md:px-20 lg:px-44" />
+				<Experience id="experience" className="px-8 md:px-20 lg:px-44" />
+				<Contact id="contact" className="px-8 md:px-20 lg:px-44" />
 
 				{/*Workin Banner*/}
 				{/*<div className="fixed top-0 left-0 w-full h-full">

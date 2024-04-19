@@ -1,8 +1,6 @@
-import navLinks from '../../data/nav-links'
-
 import CloseBtn from '../CloseBtn'
 
-export default function SideBar({className, closeSideBar}) {
+export default function SideBar({className, closeSideBar, navLinks}) {
 	return (
 		<section 
 			className={`
@@ -26,7 +24,7 @@ export default function SideBar({className, closeSideBar}) {
 					{navLinks.map((link, ndx) => (
 						<a 
 							key={ndx} 
-							href={link.href}
+							href={link.url}
 							className='text-light-gray text-sm'
 						>
 							<span className="text-light-blue px-1">

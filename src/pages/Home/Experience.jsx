@@ -3,9 +3,9 @@ import experiences from '../../data/experiences'
 import H1 from '../../components/H1'
 import UnorderedList from '../../components/UnorderedList'
 
-export default function Experience({className}) {
+export default function Experience({className, id}) {
 	return (
-		<section className={`${className}`}>
+		<section id={id} className={`${className}`}>
 			<H1 index={'03'} title={'Experience'} className="md:w-1/2"/>
 			<div className="text-sm grid md:grid-cols-2 gap-4">
 				{experiences.map((experience, ndx) => (

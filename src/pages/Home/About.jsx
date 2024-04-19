@@ -4,9 +4,9 @@ import techImWorkingOn from '../../data/current-technologies'
 import H1 from '../../components/H1'
 import UnorderedList from '../../components/UnorderedList'
 
-export default function About({className}) {
+export default function About({className, id}) {
 	return (
-		<section className={`${className}`}>
+		<section id={id} className={`${className}`}>
 			<H1 
 				index={'01'} 
 				title={'About Me'}

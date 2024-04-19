@@ -1,6 +1,6 @@
-export default function Contact({className}) {
+export default function Contact({className, id}) {
 	return (
-		<section className={`${className}`}>
+		<section id={id} className={`${className}`}>
 			Contact
 		</section>
 	)

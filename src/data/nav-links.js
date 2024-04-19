@@ -1,19 +1,19 @@
 const navLinks = [
 	{
 		name: 'About',
-		href: '#!'
+		url: '#about'
 	},
 	{
 		name: 'Experience',
-		href: '#!'
+		url: '#experience'
 	},
 	{
 		name: 'Projects',
-		href: '#!'
+		url: '#projects'
 	},
 	{
 		name: 'Contact',
-		href: '#!'
+		url: '#contact'
 	}
 ]
 
