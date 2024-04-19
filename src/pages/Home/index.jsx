@@ -55,9 +55,21 @@ export default function Home() {
 			</header>
 			<main className="relative text-light-gray">
 				<About className="px-8 md:px-20 lg:px-44" />
-				<Experience className="px-8 md:px-20 lg:px-44" />
 				<Projects className="px-8 md:px-20 lg:px-44" />
+				<Experience className="px-8 md:px-20 lg:px-44" />
 				<Contact className="px-8 md:px-20 lg:px-44" />
+
+				{/*Workin Banner*/}
+				{/*<div className="fixed top-0 left-0 w-full h-full">
+					<div 
+						className="
+							py-24 bg-red-600 text-3xl text-white grid place-items-center relative top-1/2
+							-translate-y-1/2 opacity-25 z-50
+						"
+					>
+						Working
+					</div>
+				</div>*/}
 			</main>
 		</>
 	)

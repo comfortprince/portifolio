@@ -6,10 +6,10 @@ import UnorderedList from '../../components/UnorderedList'
 export default function Experience({className}) {
 	return (
 		<section className={`${className}`}>
-			<H1 index={'02'} title={'Experience'} className="md:w-1/2"/>
+			<H1 index={'03'} title={'Experience'} className="md:w-1/2"/>
 			<div className="text-sm grid md:grid-cols-2 gap-4">
-				{experiences.map(experience => (
-					<ExperienceCard experience={experience}/>
+				{experiences.map((experience, ndx) => (
+					<ExperienceCard key={ndx} experience={experience}/>
 				))}
 			</div>
 		</section>
