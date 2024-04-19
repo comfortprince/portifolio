@@ -26,6 +26,7 @@ export default function SideBar({className, closeSideBar, navLinks}) {
 							key={ndx} 
 							href={link.url}
 							className='text-light-gray text-sm'
+							onClick={closeSideBar}
 						>
 							<span className="text-light-blue px-1">
 								0{ndx + 1}.

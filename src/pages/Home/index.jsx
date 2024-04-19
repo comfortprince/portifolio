@@ -33,6 +33,7 @@ export default function Home() {
 							key={ndx} 
 							href={link.url}
 							className='text-light-gray text-sm'
+							onClick={() => {setIsSideBarOpen(false)}}
 						>
 							<span className="text-light-blue px-1">
 								0{ndx + 1}.
@@ -55,10 +56,10 @@ export default function Home() {
 				/>
 			</header>
 			<main className="relative text-light-gray">
-				<About id="about" className="px-8 md:px-20 lg:px-44" />
-				<Projects id="projects" className="px-8 md:px-20 lg:px-44" />
-				<Experience id="experience" className="px-8 md:px-20 lg:px-44" />
-				<Contact id="contact" className="px-8 md:px-20 lg:px-44" />
+				<About id="about" className="px-8 md:px-20 lg:px-44 scroll-mt-24" />
+				<Projects id="projects" className="px-8 md:px-20 lg:px-44 scroll-mt-24" />
+				<Experience id="experience" className="px-8 md:px-20 lg:px-44 scroll-mt-24" />
+				<Contact id="contact" className="px-8 md:px-20 lg:px-44 scroll-mt-24" />
 
 				{/*Workin Banner*/}
 				{/*<div className="fixed top-0 left-0 w-full h-full">
