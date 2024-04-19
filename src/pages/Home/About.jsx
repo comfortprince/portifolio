@@ -1,8 +1,6 @@
 import { professionalPhoto } from '../../data/Constants'
-import techImWorkingOn from '../../data/current-technologies'
 
 import H1 from '../../components/H1'
-import UnorderedList from '../../components/UnorderedList'
 
 export default function About({className, id}) {
 	return (
@@ -22,15 +20,8 @@ export default function About({className, id}) {
 						It all seemed like magic.
 					</p>
 					<p className="mt-3">
-						Fast-forward to today, I've learned a lot about microprocessors, assembly, data structures, algorithms, the web e.t.c. I've also had the privilege of working at a start-up and some great projects .
+						Fast-forward to today, I've learned a lot about microprocessors, assembly, data structures, algorithms, the web e.t.c. I've also had the privilege of working at a start-up and some great projects.
 					</p>
-					<p className="mt-3">
-						Here are a few technologies I've been working with recently:
-					</p>
-					<div className="flex gap-12 md:gap-32 mt-3">
-						<UnorderedList items={techImWorkingOn.slice(0, 3)}/>
-						<UnorderedList items={techImWorkingOn.slice(3)}/>
-					</div>
 				</div>
 				<div className="md:w-1/2 max-md:mb-8 max-md:flex justify-center">
 					<div className="w-80 h-96 md:w-60 md:h-72 relative md:ml-16">
