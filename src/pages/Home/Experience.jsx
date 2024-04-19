@@ -12,6 +12,8 @@ export default function Experience({className, id}) {
 					<ExperienceCard key={ndx} experience={experience}/>
 				))}
 			</div>
+
+			
 		</section>
 	)
 }

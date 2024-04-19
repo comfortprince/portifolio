@@ -3,7 +3,6 @@ import { useState } from 'react'
 import projects from '../../data/projects'
 
 import H1 from '../../components/H1'
-import UnorderedList from '../../components/UnorderedList'
 
 export default function Projects({className, id}) {
 	return (
@@ -41,7 +40,6 @@ function ProjectCard ({project}) {
 					Live Site
 				</a>
 			</div>
-			{/*<UnorderedList items={project.technologiesUsed}/>*/}
 		</article>
 	)
 }
