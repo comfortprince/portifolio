@@ -30,7 +30,7 @@ export default function About({className}) {
 					<div className="flex gap-12 md:gap-32 mt-3">
 						<ul>
 							{techImWorkingOn.slice(0, 3).map((technology) => (
-								<li className="flex items-center">
+								<li key={technology} className="flex items-center">
 									<RightArrow/>
 									{technology}
 								</li>
@@ -38,7 +38,7 @@ export default function About({className}) {
 						</ul>
 						<ul>
 							{techImWorkingOn.slice(3).map((technology) => (
-								<li className="flex items-center">
+								<li key={technology} className="flex items-center">
 									<RightArrow/>
 									{technology}
 								</li>
